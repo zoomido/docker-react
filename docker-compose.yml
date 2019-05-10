@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  node:
+    image: node:alpine
+    user: node
+    working_dir: /home/node/app
+    #environment:
+    #  - NODE_ENV=production
+    #    (default is development)
+    volumes:
+      - ./app:/home/node/app
+    #expose:
+    #  - "8081"
+    ports:
+      - "3000:3000"
+    command: "npm start"
