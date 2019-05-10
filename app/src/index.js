@@ -2,6 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
+// Last chapter: Storing a History of Moves
+// https://reactjs.org/tutorial/tutorial.html
+
 
 function Square (props) {
   return (
